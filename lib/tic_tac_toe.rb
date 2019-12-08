@@ -80,7 +80,6 @@ def winner(board)
       "O"
     else
       "X"
-    end
   end
 end
 
