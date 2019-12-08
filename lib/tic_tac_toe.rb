@@ -76,9 +76,9 @@ end
 def winner(board)
   if won?(board)
     if turn_count(board).odd?
-      "X"
-    else
       "O"
+    else
+      "X"
     end
   end
 end
