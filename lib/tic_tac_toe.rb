@@ -74,7 +74,8 @@ def over?(board)
 end
 
 def winner(board)
-  if won?(board)
+  winning_combo = won?(board)
+  board[winning_combo.first]
     if turn_count(board).odd?
       "O"
     else
