@@ -74,8 +74,8 @@ def over?(board)
 end
 
 def winner(board)
-  if winning_combo == won?(board)
-    board[winning_combo.first]
+  if won?(board) != nil
+    winner == board[won?(board)[0]]
   end
 end
 
